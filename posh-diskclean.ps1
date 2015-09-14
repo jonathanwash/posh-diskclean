@@ -58,6 +58,7 @@ Param (
     [int]$DiskCleanTool
 )
 
+# See http://baldwin-ps.blogspot.be/2013/07/empty-recycle-bin-with-retention-time.html for info on this code
 $objShell = New-Object -ComObject Shell.Application 
 $objFolder = $objShell.Namespace(0xA)  
 
